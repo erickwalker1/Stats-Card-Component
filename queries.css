@@ -1,0 +1,94 @@
+/* --------- 768px ----------- */
+@media screen and (min-width: 768px) {
+  .card {
+    padding-top: 7%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Card Content */
+
+  .inner-content {
+    text-align: start;
+    border-radius: 10px 0 0 10px;
+  }
+
+  h2,
+  .content {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* List Features */
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 1.7rem;
+  }
+
+  li p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  li p:nth-child(2) {
+    font-size: 0.65rem;
+  }
+
+  /* Card Image */
+
+  .image-container {
+    height: 357.64px;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/* --------- 1024px ----------- */
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden; /* --- Prevents Scrolling --- */
+  }
+  .card {
+    padding-top: 15%;
+  }
+
+  .inner-content,
+  .image-container {
+    min-width: 418.5px;
+  }
+
+  .image-container {
+    height: 349px;
+  }
+
+  .content {
+    width: 90%;
+    top: 0.5rem;
+  }
+
+  .list {
+    justify-content: space-evenly;
+    top: 0.75rem;
+  }
+}
+
+/* --------- 1200px ----------- */
+@media screen and (min-width: 1200px) {
+  .image-container {
+    height: 369.52px;
+  }
+}
+
+/* --------- 1440px ----------- */
+@media screen and (min-width: 1440px) {
+  .image-container {
+    height: 374px;
+  }
+}
+
+/* 
+Notes:
+  - Setting Max Widths On An Element Avoids The Element From Breaking When A Device Is Flipped 
+  - Place Image Inside Inner Content Alongside Content Div Next Time Around To Avoid Declaring Image Height With Each Breakpoint 
+*/
